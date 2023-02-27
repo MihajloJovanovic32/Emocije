@@ -1,5 +1,6 @@
 import org.etsntesla.it.spring.BeanFactory;
 import org.etsntesla.it.spring.MySQLManagerBean;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
@@ -26,5 +27,10 @@ public class MySQLTest3 extends BaseMySqlTest {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @AfterAll
+    static void showResult(){
+        showTable();
     }
 }

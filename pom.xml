@@ -53,7 +53,7 @@
 
         <dependency>
             <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-core</artifactId>
+            <artifactId>flyway-mysql</artifactId>
             <version>9.8.1</version>
         </dependency>
 
@@ -69,10 +69,12 @@
                     <version>3.0.0-M7</version>
                     <configuration>
                         <includes>
-                            <include>**/MySQLTest3.java</include>
+
+                            <include>**/MySQLTest4.java</include>
                         </includes>
                         <excludes>
                             <exclude>**/BaseMySqlTest.java</exclude>
+                            <exclude>**/FlywayMySqlTest.java</exclude>
                         </excludes>
                     </configuration>
                 </plugin>
@@ -88,7 +90,7 @@
                     <dependencies>
                         <dependency>
                             <groupId>org.flywaydb</groupId>
-                            <artifactId>flyway-core</artifactId>
+                            <artifactId>flyway-mysql</artifactId>
                             <version>9.8.1</version>
                         </dependency>
                     </dependencies>
