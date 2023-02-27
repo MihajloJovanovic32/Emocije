@@ -76,6 +76,23 @@
                         </excludes>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.flywaydb</groupId>
+                    <artifactId>flyway-maven-plugin</artifactId>
+                    <version>9.8.1</version>
+                    <configuration>
+                        <configFiles>
+                            <configFile>src/main/resources/application.properties</configFile>
+                        </configFiles>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.flywaydb</groupId>
+                            <artifactId>flyway-core</artifactId>
+                            <version>9.8.1</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>

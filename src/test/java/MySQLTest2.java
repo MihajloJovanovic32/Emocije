@@ -6,8 +6,8 @@ import java.sql.SQLException;
 public class MySQLTest2 extends BaseMySqlTest {
     @BeforeAll
     static void init1() {
-        setDataDumpMySqlFile("emocije_data_data.sql");
-        setEmptyDumpMySqlFile("emocije_empty_data.sql");
+        setDataDumpMySqlFile("V01.002__emocije_data_data.sql");
+        setEmptyDumpMySqlFile("V01.001__emocije_empty_data.sql");
         emptyData();
         fillData();
     }
